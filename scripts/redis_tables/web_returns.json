@@ -1,0 +1,128 @@
+{
+    "tableName": "web_returns",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "wr_returned_date_sk",
+                "mapping": "wr_returned_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_returned_time_sk",
+                "mapping": "wr_returned_time_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_item_sk",
+                "mapping": "wr_item_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_refunded_customer_sk",
+                "mapping": "wr_refunded_customer_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_refunded_cdemo_sk",
+                "mapping": "wr_refunded_cdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_refunded_hdemo_sk",
+                "mapping": "wr_refunded_hdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_refunded_addr_sk",
+                "mapping": "wr_refunded_addr_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_returning_customer_sk",
+                "mapping": "wr_returning_customer_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_returning_cdemo_sk",
+                "mapping": "wr_returning_cdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_returning_hdemo_sk",
+                "mapping": "wr_returning_hdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_returning_addr_sk",
+                "mapping": "wr_returning_addr_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_web_page_sk",
+                "mapping": "wr_web_page_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_reason_sk",
+                "mapping": "wr_reason_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_order_number",
+                "mapping": "wr_order_number",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_return_quantity",
+                "mapping": "wr_return_quantity",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_return_amt",
+                "mapping": "wr_return_amt",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_return_tax",
+                "mapping": "wr_return_tax",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_return_amt_inc_tax",
+                "mapping": "wr_return_amt_inc_tax",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_fee",
+                "mapping": "wr_fee",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_return_ship_cost",
+                "mapping": "wr_return_ship_cost",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_refunded_cash",
+                "mapping": "wr_refunded_cash",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_reversed_charge",
+                "mapping": "wr_reversed_charge",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_account_credit",
+                "mapping": "wr_account_credit",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wr_net_loss",
+                "mapping": "wr_net_loss",
+                "type": "DOUBLE"
+            }
+        ]
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "tableName": "customer_demographics",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "cd_demo_sk",
+                "mapping": "cd_demo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cd_gender",
+                "mapping": "cd_gender",
+                "type": "VARCHAR(1)"
+            },
+            {
+                "name": "cd_marital_status",
+                "mapping": "cd_marital_status",
+                "type": "VARCHAR(1)"
+            },
+            {
+                "name": "cd_education_status",
+                "mapping": "cd_education_status",
+                "type": "VARCHAR(20)"
+            },
+            {
+                "name": "cd_purchase_estimate",
+                "mapping": "cd_purchase_estimate",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cd_credit_rating",
+                "mapping": "cd_credit_rating",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "cd_dep_count",
+                "mapping": "cd_dep_count",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cd_dep_employed_count",
+                "mapping": "cd_dep_employed_count",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cd_dep_college_count",
+                "mapping": "cd_dep_college_count",
+                "type": "DOUBLE"
+            }
+        ]
+    }
+}

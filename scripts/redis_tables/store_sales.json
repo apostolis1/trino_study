@@ -1,0 +1,123 @@
+{
+    "tableName": "store_sales",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "ss_sold_date_sk",
+                "mapping": "ss_sold_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_sold_time_sk",
+                "mapping": "ss_sold_time_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_item_sk",
+                "mapping": "ss_item_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_customer_sk",
+                "mapping": "ss_customer_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_cdemo_sk",
+                "mapping": "ss_cdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_hdemo_sk",
+                "mapping": "ss_hdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_addr_sk",
+                "mapping": "ss_addr_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_store_sk",
+                "mapping": "ss_store_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_promo_sk",
+                "mapping": "ss_promo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_ticket_number",
+                "mapping": "ss_ticket_number",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_quantity",
+                "mapping": "ss_quantity",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_wholesale_cost",
+                "mapping": "ss_wholesale_cost",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_list_price",
+                "mapping": "ss_list_price",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_sales_price",
+                "mapping": "ss_sales_price",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_ext_discount_amt",
+                "mapping": "ss_ext_discount_amt",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_ext_sales_price",
+                "mapping": "ss_ext_sales_price",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_ext_wholesale_cost",
+                "mapping": "ss_ext_wholesale_cost",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_ext_list_price",
+                "mapping": "ss_ext_list_price",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_ext_tax",
+                "mapping": "ss_ext_tax",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_coupon_amt",
+                "mapping": "ss_coupon_amt",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_net_paid",
+                "mapping": "ss_net_paid",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_net_paid_inc_tax",
+                "mapping": "ss_net_paid_inc_tax",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ss_net_profit",
+                "mapping": "ss_net_profit",
+                "type": "DOUBLE"
+            }
+        ]
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "tableName": "catalog_page",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "cp_catalog_page_sk",
+                "mapping": "cp_catalog_page_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cp_catalog_page_id",
+                "mapping": "cp_catalog_page_id",
+                "type": "VARCHAR(16)"
+            },
+            {
+                "name": "cp_start_date_sk",
+                "mapping": "cp_start_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cp_end_date_sk",
+                "mapping": "cp_end_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cp_department",
+                "mapping": "cp_department",
+                "type": "VARCHAR(50)"
+            },
+            {
+                "name": "cp_catalog_number",
+                "mapping": "cp_catalog_number",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cp_catalog_page_number",
+                "mapping": "cp_catalog_page_number",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cp_description",
+                "mapping": "cp_description",
+                "type": "VARCHAR(100)"
+            },
+            {
+                "name": "cp_type",
+                "mapping": "cp_type",
+                "type": "VARCHAR(100)"
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "TPCDS_TEMPLATE" : "/home/apostolis/Projects/bigdata/scripts/tpcds.sql",
+    "TABLE_DIST" : "dist_redis.json",
+    "CREATE_OUT" : "/home/apostolis/Projects/bigdata/sql/redis/tpcds_create.sql",
+    "INSERT_OUT" : "/home/apostolis/Projects/bigdata/sql/redis/tpcds_insert.sql",
+    "DROP_OUT" : "/home/apostolis/Projects/bigdata/sql/redis/tpcds_drop.sql",
+    "COUNT_OUT" : "/home/apostolis/Projects/bigdata/sql/redis/tpcds_count.sql",
+    "REDIS_JSON_DIR" : "/home/apostolis/Projects/bigdata/scripts/redis_tables/",
+    "BENCHMARK" : "sf10"
+}

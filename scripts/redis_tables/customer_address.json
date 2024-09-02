@@ -1,0 +1,73 @@
+{
+    "tableName": "customer_address",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "ca_address_sk",
+                "mapping": "ca_address_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ca_address_id",
+                "mapping": "ca_address_id",
+                "type": "VARCHAR(16)"
+            },
+            {
+                "name": "ca_street_number",
+                "mapping": "ca_street_number",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "ca_street_name",
+                "mapping": "ca_street_name",
+                "type": "VARCHAR(60)"
+            },
+            {
+                "name": "ca_street_type",
+                "mapping": "ca_street_type",
+                "type": "VARCHAR(15)"
+            },
+            {
+                "name": "ca_suite_number",
+                "mapping": "ca_suite_number",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "ca_city",
+                "mapping": "ca_city",
+                "type": "VARCHAR(60)"
+            },
+            {
+                "name": "ca_county",
+                "mapping": "ca_county",
+                "type": "VARCHAR(30)"
+            },
+            {
+                "name": "ca_state",
+                "mapping": "ca_state",
+                "type": "VARCHAR(2)"
+            },
+            {
+                "name": "ca_zip",
+                "mapping": "ca_zip",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "ca_country",
+                "mapping": "ca_country",
+                "type": "VARCHAR(20)"
+            },
+            {
+                "name": "ca_gmt_offset",
+                "mapping": "ca_gmt_offset",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "ca_location_type",
+                "mapping": "ca_location_type",
+                "type": "VARCHAR(20)"
+            }
+        ]
+    }
+}

@@ -1,0 +1,138 @@
+{
+    "tableName": "web_site",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "web_site_sk",
+                "mapping": "web_site_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "web_site_id",
+                "mapping": "web_site_id",
+                "type": "VARCHAR(16)"
+            },
+            {
+                "name": "web_rec_start_date",
+                "mapping": "web_rec_start_date",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "web_rec_end_date",
+                "mapping": "web_rec_end_date",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "web_name",
+                "mapping": "web_name",
+                "type": "VARCHAR(50)"
+            },
+            {
+                "name": "web_open_date_sk",
+                "mapping": "web_open_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "web_close_date_sk",
+                "mapping": "web_close_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "web_class",
+                "mapping": "web_class",
+                "type": "VARCHAR(50)"
+            },
+            {
+                "name": "web_manager",
+                "mapping": "web_manager",
+                "type": "VARCHAR(40)"
+            },
+            {
+                "name": "web_mkt_id",
+                "mapping": "web_mkt_id",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "web_mkt_class",
+                "mapping": "web_mkt_class",
+                "type": "VARCHAR(50)"
+            },
+            {
+                "name": "web_mkt_desc",
+                "mapping": "web_mkt_desc",
+                "type": "VARCHAR(100)"
+            },
+            {
+                "name": "web_market_manager",
+                "mapping": "web_market_manager",
+                "type": "VARCHAR(40)"
+            },
+            {
+                "name": "web_company_id",
+                "mapping": "web_company_id",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "web_company_name",
+                "mapping": "web_company_name",
+                "type": "VARCHAR(50)"
+            },
+            {
+                "name": "web_street_number",
+                "mapping": "web_street_number",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "web_street_name",
+                "mapping": "web_street_name",
+                "type": "VARCHAR(60)"
+            },
+            {
+                "name": "web_street_type",
+                "mapping": "web_street_type",
+                "type": "VARCHAR(15)"
+            },
+            {
+                "name": "web_suite_number",
+                "mapping": "web_suite_number",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "web_city",
+                "mapping": "web_city",
+                "type": "VARCHAR(60)"
+            },
+            {
+                "name": "web_county",
+                "mapping": "web_county",
+                "type": "VARCHAR(30)"
+            },
+            {
+                "name": "web_state",
+                "mapping": "web_state",
+                "type": "VARCHAR(2)"
+            },
+            {
+                "name": "web_zip",
+                "mapping": "web_zip",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "web_country",
+                "mapping": "web_country",
+                "type": "VARCHAR(20)"
+            },
+            {
+                "name": "web_gmt_offset",
+                "mapping": "web_gmt_offset",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "web_tax_percentage",
+                "mapping": "web_tax_percentage",
+                "type": "DOUBLE"
+            }
+        ]
+    }
+}

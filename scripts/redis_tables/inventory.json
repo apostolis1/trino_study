@@ -1,0 +1,28 @@
+{
+    "tableName": "inventory",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "inv_date_sk",
+                "mapping": "inv_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "inv_item_sk",
+                "mapping": "inv_item_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "inv_warehouse_sk",
+                "mapping": "inv_warehouse_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "inv_quantity_on_hand",
+                "mapping": "inv_quantity_on_hand",
+                "type": "DOUBLE"
+            }
+        ]
+    }
+}

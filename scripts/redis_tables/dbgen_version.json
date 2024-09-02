@@ -1,0 +1,28 @@
+{
+    "tableName": "dbgen_version",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "dv_version",
+                "mapping": "dv_version",
+                "type": "VARCHAR(16)"
+            },
+            {
+                "name": "dv_create_date",
+                "mapping": "dv_create_date",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "dv_create_time",
+                "mapping": "dv_create_time",
+                "type": "TIME"
+            },
+            {
+                "name": "dv_cmdline_args",
+                "mapping": "dv_cmdline_args",
+                "type": "VARCHAR(200)"
+            }
+        ]
+    }
+}

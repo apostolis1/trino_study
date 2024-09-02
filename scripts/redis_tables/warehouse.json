@@ -1,0 +1,78 @@
+{
+    "tableName": "warehouse",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "w_warehouse_sk",
+                "mapping": "w_warehouse_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "w_warehouse_id",
+                "mapping": "w_warehouse_id",
+                "type": "VARCHAR(16)"
+            },
+            {
+                "name": "w_warehouse_name",
+                "mapping": "w_warehouse_name",
+                "type": "VARCHAR(20)"
+            },
+            {
+                "name": "w_warehouse_sq_ft",
+                "mapping": "w_warehouse_sq_ft",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "w_street_number",
+                "mapping": "w_street_number",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "w_street_name",
+                "mapping": "w_street_name",
+                "type": "VARCHAR(60)"
+            },
+            {
+                "name": "w_street_type",
+                "mapping": "w_street_type",
+                "type": "VARCHAR(15)"
+            },
+            {
+                "name": "w_suite_number",
+                "mapping": "w_suite_number",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "w_city",
+                "mapping": "w_city",
+                "type": "VARCHAR(60)"
+            },
+            {
+                "name": "w_county",
+                "mapping": "w_county",
+                "type": "VARCHAR(30)"
+            },
+            {
+                "name": "w_state",
+                "mapping": "w_state",
+                "type": "VARCHAR(2)"
+            },
+            {
+                "name": "w_zip",
+                "mapping": "w_zip",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "w_country",
+                "mapping": "w_country",
+                "type": "VARCHAR(20)"
+            },
+            {
+                "name": "w_gmt_offset",
+                "mapping": "w_gmt_offset",
+                "type": "DOUBLE"
+            }
+        ]
+    }
+}

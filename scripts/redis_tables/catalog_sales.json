@@ -1,0 +1,178 @@
+{
+    "tableName": "catalog_sales",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "cs_sold_date_sk",
+                "mapping": "cs_sold_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_sold_time_sk",
+                "mapping": "cs_sold_time_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_ship_date_sk",
+                "mapping": "cs_ship_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_bill_customer_sk",
+                "mapping": "cs_bill_customer_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_bill_cdemo_sk",
+                "mapping": "cs_bill_cdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_bill_hdemo_sk",
+                "mapping": "cs_bill_hdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_bill_addr_sk",
+                "mapping": "cs_bill_addr_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_ship_customer_sk",
+                "mapping": "cs_ship_customer_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_ship_cdemo_sk",
+                "mapping": "cs_ship_cdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_ship_hdemo_sk",
+                "mapping": "cs_ship_hdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_ship_addr_sk",
+                "mapping": "cs_ship_addr_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_call_center_sk",
+                "mapping": "cs_call_center_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_catalog_page_sk",
+                "mapping": "cs_catalog_page_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_ship_mode_sk",
+                "mapping": "cs_ship_mode_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_warehouse_sk",
+                "mapping": "cs_warehouse_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_item_sk",
+                "mapping": "cs_item_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_promo_sk",
+                "mapping": "cs_promo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_order_number",
+                "mapping": "cs_order_number",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_quantity",
+                "mapping": "cs_quantity",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_wholesale_cost",
+                "mapping": "cs_wholesale_cost",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_list_price",
+                "mapping": "cs_list_price",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_sales_price",
+                "mapping": "cs_sales_price",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_ext_discount_amt",
+                "mapping": "cs_ext_discount_amt",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_ext_sales_price",
+                "mapping": "cs_ext_sales_price",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_ext_wholesale_cost",
+                "mapping": "cs_ext_wholesale_cost",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_ext_list_price",
+                "mapping": "cs_ext_list_price",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_ext_tax",
+                "mapping": "cs_ext_tax",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_coupon_amt",
+                "mapping": "cs_coupon_amt",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_ext_ship_cost",
+                "mapping": "cs_ext_ship_cost",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_net_paid",
+                "mapping": "cs_net_paid",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_net_paid_inc_tax",
+                "mapping": "cs_net_paid_inc_tax",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_net_paid_inc_ship",
+                "mapping": "cs_net_paid_inc_ship",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_net_paid_inc_ship_tax",
+                "mapping": "cs_net_paid_inc_ship_tax",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cs_net_profit",
+                "mapping": "cs_net_profit",
+                "type": "DOUBLE"
+            }
+        ]
+    }
+}

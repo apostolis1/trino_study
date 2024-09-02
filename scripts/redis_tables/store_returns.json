@@ -1,0 +1,114 @@
+{
+    "tableName": "store_returns",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "sr_returned_date_sk",
+                "mapping": "sr_returned_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_return_time_sk",
+                "mapping": "sr_return_time_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_customer_sk",
+                "mapping": "sr_customer_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_cdemo_sk",
+                "mapping": "sr_cdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_hdemo_sk",
+                "mapping": "sr_hdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_addr_sk",
+                "mapping": "sr_addr_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_store_sk",
+                "mapping": "sr_store_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_reason_sk",
+                "mapping": "sr_reason_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_return_quantity",
+                "mapping": "sr_return_quantity",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_return_amt",
+                "mapping": "sr_return_amt",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_return_tax",
+                "mapping": "sr_return_tax",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_return_amt_inc_tax",
+                "mapping": "sr_return_amt_inc_tax",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_fee",
+                "mapping": "sr_fee",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_return_ship_cost",
+                "mapping": "sr_return_ship_cost",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_refunded_cash",
+                "mapping": "sr_refunded_cash",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_reversed_charge",
+                "mapping": "sr_reversed_charge",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_store_credit",
+                "mapping": "sr_store_credit",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_net_loss",
+                "mapping": "sr_net_loss",
+                "type": "DOUBLE"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "dataFormat": "INT",
+                "name": "sr_item_sk",
+                "type": "INTEGER"
+		    },
+            {
+                "dataFormat": "INT",
+                "name": "sr_ticket_number",
+                "type": "INTEGER"
+		    }
+        ]
+    }
+    
+}

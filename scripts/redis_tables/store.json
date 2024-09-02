@@ -1,0 +1,153 @@
+{
+    "tableName": "store",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "s_store_sk",
+                "mapping": "s_store_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "s_store_id",
+                "mapping": "s_store_id",
+                "type": "VARCHAR(16)"
+            },
+            {
+                "name": "s_rec_start_date",
+                "mapping": "s_rec_start_date",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "s_rec_end_date",
+                "mapping": "s_rec_end_date",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "s_closed_date_sk",
+                "mapping": "s_closed_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "s_store_name",
+                "mapping": "s_store_name",
+                "type": "VARCHAR(50)"
+            },
+            {
+                "name": "s_number_employees",
+                "mapping": "s_number_employees",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "s_floor_space",
+                "mapping": "s_floor_space",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "s_hours",
+                "mapping": "s_hours",
+                "type": "VARCHAR(20)"
+            },
+            {
+                "name": "s_manager",
+                "mapping": "s_manager",
+                "type": "VARCHAR(40)"
+            },
+            {
+                "name": "s_market_id",
+                "mapping": "s_market_id",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "s_geography_class",
+                "mapping": "s_geography_class",
+                "type": "VARCHAR(100)"
+            },
+            {
+                "name": "s_market_desc",
+                "mapping": "s_market_desc",
+                "type": "VARCHAR(100)"
+            },
+            {
+                "name": "s_market_manager",
+                "mapping": "s_market_manager",
+                "type": "VARCHAR(40)"
+            },
+            {
+                "name": "s_division_id",
+                "mapping": "s_division_id",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "s_division_name",
+                "mapping": "s_division_name",
+                "type": "VARCHAR(50)"
+            },
+            {
+                "name": "s_company_id",
+                "mapping": "s_company_id",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "s_company_name",
+                "mapping": "s_company_name",
+                "type": "VARCHAR(50)"
+            },
+            {
+                "name": "s_street_number",
+                "mapping": "s_street_number",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "s_street_name",
+                "mapping": "s_street_name",
+                "type": "VARCHAR(60)"
+            },
+            {
+                "name": "s_street_type",
+                "mapping": "s_street_type",
+                "type": "VARCHAR(15)"
+            },
+            {
+                "name": "s_suite_number",
+                "mapping": "s_suite_number",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "s_city",
+                "mapping": "s_city",
+                "type": "VARCHAR(60)"
+            },
+            {
+                "name": "s_county",
+                "mapping": "s_county",
+                "type": "VARCHAR(30)"
+            },
+            {
+                "name": "s_state",
+                "mapping": "s_state",
+                "type": "VARCHAR(2)"
+            },
+            {
+                "name": "s_zip",
+                "mapping": "s_zip",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "s_country",
+                "mapping": "s_country",
+                "type": "VARCHAR(20)"
+            },
+            {
+                "name": "s_gmt_offset",
+                "mapping": "s_gmt_offset",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "s_tax_precentage",
+                "mapping": "s_tax_precentage",
+                "type": "DOUBLE"
+            }
+        ]
+    }
+}

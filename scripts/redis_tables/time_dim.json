@@ -1,0 +1,58 @@
+{
+    "tableName": "time_dim",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "t_time_sk",
+                "mapping": "t_time_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "t_time_id",
+                "mapping": "t_time_id",
+                "type": "VARCHAR(16)"
+            },
+            {
+                "name": "t_time",
+                "mapping": "t_time",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "t_hour",
+                "mapping": "t_hour",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "t_minute",
+                "mapping": "t_minute",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "t_second",
+                "mapping": "t_second",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "t_am_pm",
+                "mapping": "t_am_pm",
+                "type": "VARCHAR(2)"
+            },
+            {
+                "name": "t_shift",
+                "mapping": "t_shift",
+                "type": "VARCHAR(20)"
+            },
+            {
+                "name": "t_sub_shift",
+                "mapping": "t_sub_shift",
+                "type": "VARCHAR(20)"
+            },
+            {
+                "name": "t_meal_time",
+                "mapping": "t_meal_time",
+                "type": "VARCHAR(20)"
+            }
+        ]
+    }
+}

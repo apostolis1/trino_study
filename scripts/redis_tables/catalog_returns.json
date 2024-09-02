@@ -1,0 +1,143 @@
+{
+    "tableName": "catalog_returns",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "cr_returned_date_sk",
+                "mapping": "cr_returned_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_returned_time_sk",
+                "mapping": "cr_returned_time_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_item_sk",
+                "mapping": "cr_item_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_refunded_customer_sk",
+                "mapping": "cr_refunded_customer_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_refunded_cdemo_sk",
+                "mapping": "cr_refunded_cdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_refunded_hdemo_sk",
+                "mapping": "cr_refunded_hdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_refunded_addr_sk",
+                "mapping": "cr_refunded_addr_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_returning_customer_sk",
+                "mapping": "cr_returning_customer_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_returning_cdemo_sk",
+                "mapping": "cr_returning_cdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_returning_hdemo_sk",
+                "mapping": "cr_returning_hdemo_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_returning_addr_sk",
+                "mapping": "cr_returning_addr_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_call_center_sk",
+                "mapping": "cr_call_center_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_catalog_page_sk",
+                "mapping": "cr_catalog_page_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_ship_mode_sk",
+                "mapping": "cr_ship_mode_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_warehouse_sk",
+                "mapping": "cr_warehouse_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_reason_sk",
+                "mapping": "cr_reason_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_order_number",
+                "mapping": "cr_order_number",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_return_quantity",
+                "mapping": "cr_return_quantity",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_return_amount",
+                "mapping": "cr_return_amount",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_return_tax",
+                "mapping": "cr_return_tax",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_return_amt_inc_tax",
+                "mapping": "cr_return_amt_inc_tax",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_fee",
+                "mapping": "cr_fee",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_return_ship_cost",
+                "mapping": "cr_return_ship_cost",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_refunded_cash",
+                "mapping": "cr_refunded_cash",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_reversed_charge",
+                "mapping": "cr_reversed_charge",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_store_credit",
+                "mapping": "cr_store_credit",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "cr_net_loss",
+                "mapping": "cr_net_loss",
+                "type": "DOUBLE"
+            }
+        ]
+    }
+}

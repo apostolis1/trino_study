@@ -1,0 +1,78 @@
+{
+    "tableName": "web_page",
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "wp_web_page_sk",
+                "mapping": "wp_web_page_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wp_web_page_id",
+                "mapping": "wp_web_page_id",
+                "type": "VARCHAR(16)"
+            },
+            {
+                "name": "wp_rec_start_date",
+                "mapping": "wp_rec_start_date",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "wp_rec_end_date",
+                "mapping": "wp_rec_end_date",
+                "type": "VARCHAR(10)"
+            },
+            {
+                "name": "wp_creation_date_sk",
+                "mapping": "wp_creation_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wp_access_date_sk",
+                "mapping": "wp_access_date_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wp_autogen_flag",
+                "mapping": "wp_autogen_flag",
+                "type": "VARCHAR(1)"
+            },
+            {
+                "name": "wp_customer_sk",
+                "mapping": "wp_customer_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wp_url",
+                "mapping": "wp_url",
+                "type": "VARCHAR(100)"
+            },
+            {
+                "name": "wp_type",
+                "mapping": "wp_type",
+                "type": "VARCHAR(50)"
+            },
+            {
+                "name": "wp_char_count",
+                "mapping": "wp_char_count",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wp_link_count",
+                "mapping": "wp_link_count",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wp_image_count",
+                "mapping": "wp_image_count",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "wp_max_ad_count",
+                "mapping": "wp_max_ad_count",
+                "type": "DOUBLE"
+            }
+        ]
+    }
+}
