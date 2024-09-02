@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*$py.class
+
+# Local and backup files
+local/
+bck/
+offline/
+
+# Trino installation files
+trino_installation/
+
+# CSV files used to populate redis
+data_dump/
