@@ -90,26 +90,43 @@ class SQLTable:
 
     def get_key_json(self) -> dict:
         if self.pkey is not None:
-            fields = []
-            for col in self.pkey:
-                fields.append({
-                    "name": col,
-                    "type": get_redis_type(self.cols[col])
-                })
-            d = {
-                "dataFormat": "raw",
-                "fields": fields
-            }
+            if len(self.pkey) > 1:
+                d = {
+                    "dataFormat": "raw",
+                    "fields": [
+                        {
+                            "name": "pkey",
+                            "type": "VARCHAR"
+                        }
+                    ]
+                }
+            else:
+                fields = []
+                for col in self.pkey:
+                    fields.append({
+                        "name": col,
+                        "type": "VARCHAR"
+                    })
+                d = {
+                    "dataFormat": "raw",
+                    "fields": fields
+                }
             return d
 
     def get_fields(self) -> list:
         fields = []
+        if not self.pkey:
+            print(self.name)
         for col_name, col_type in self.cols.items():
-            fields.append({
-                "name": col_name,
-                "mapping": col_name,
-                "type": get_redis_type(col_type)
-            })
+            # The field should not be included when
+            # 1) It is the only pkey
+
+            if not (len(self.pkey) == 1 and col_name == self.pkey[0]): 
+                fields.append({
+                    "name": col_name,
+                    "mapping": col_name,
+                    "type": get_redis_type(col_type)
+                })
         return fields
 
     def has_date_col(self):
@@ -129,7 +146,7 @@ class QueryGen:
         "cassandra": "cassandra.trino"
     }
 
-    TABLES_TO_EXCLUDE = set(['inventory', 'dbgen_version'])
+    TABLES_TO_EXCLUDE = set(['dbgen_version'])
 
     def __init__(self, config_path="config.json"):
         self.config: Config = self.get_config_from_file(config_path)
@@ -296,7 +313,6 @@ class QueryGen:
                 "dataFormat": "hash",
                 "fields": sql_table.get_fields()
             }
-
         }
         if include_keys and sql_table.pkey is not None:
             d["key"] = sql_table.get_key_json()
@@ -310,6 +326,8 @@ class QueryGen:
         """
         sql_tables = self.create_sql_tables()
         for table in sql_tables:
+            if table.name in self.TABLES_TO_EXCLUDE:
+                continue
             table_name = table.name
             # TODO: Make sure if the key json is populated, the same col is removed from the other cols
             table_json = self.json_from_sqltable(table, include_keys)
