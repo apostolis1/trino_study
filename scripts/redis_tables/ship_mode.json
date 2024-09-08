@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "sm_ship_mode_sk",
-                "mapping": "sm_ship_mode_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "sm_ship_mode_id",
                 "mapping": "sm_ship_mode_id",
                 "type": "VARCHAR(16)"
@@ -32,6 +27,15 @@
                 "name": "sm_contract",
                 "mapping": "sm_contract",
                 "type": "VARCHAR(20)"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "sm_ship_mode_sk",
+                "type": "VARCHAR"
             }
         ]
     }

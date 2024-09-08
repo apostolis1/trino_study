@@ -139,5 +139,14 @@
                 "type": "DOUBLE"
             }
         ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "pkey",
+                "type": "VARCHAR"
+            }
+        ]
     }
 }

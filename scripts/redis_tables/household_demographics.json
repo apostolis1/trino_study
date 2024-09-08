@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "hd_demo_sk",
-                "mapping": "hd_demo_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "hd_income_band_sk",
                 "mapping": "hd_income_band_sk",
                 "type": "DOUBLE"
@@ -27,6 +22,15 @@
                 "name": "hd_vehicle_count",
                 "mapping": "hd_vehicle_count",
                 "type": "DOUBLE"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "hd_demo_sk",
+                "type": "VARCHAR"
             }
         ]
     }

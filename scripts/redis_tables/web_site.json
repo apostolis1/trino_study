@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "web_site_sk",
-                "mapping": "web_site_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "web_site_id",
                 "mapping": "web_site_id",
                 "type": "VARCHAR(16)"
@@ -132,6 +127,15 @@
                 "name": "web_tax_percentage",
                 "mapping": "web_tax_percentage",
                 "type": "DOUBLE"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "web_site_sk",
+                "type": "VARCHAR"
             }
         ]
     }

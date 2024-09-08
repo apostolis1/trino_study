@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "c_customer_sk",
-                "mapping": "c_customer_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "c_customer_id",
                 "mapping": "c_customer_id",
                 "type": "VARCHAR(16)"
@@ -92,6 +87,15 @@
                 "name": "c_last_review_date_sk",
                 "mapping": "c_last_review_date_sk",
                 "type": "DOUBLE"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "c_customer_sk",
+                "type": "VARCHAR"
             }
         ]
     }

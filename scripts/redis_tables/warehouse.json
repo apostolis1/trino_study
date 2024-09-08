@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "w_warehouse_sk",
-                "mapping": "w_warehouse_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "w_warehouse_id",
                 "mapping": "w_warehouse_id",
                 "type": "VARCHAR(16)"
@@ -72,6 +67,15 @@
                 "name": "w_gmt_offset",
                 "mapping": "w_gmt_offset",
                 "type": "DOUBLE"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "w_warehouse_sk",
+                "type": "VARCHAR"
             }
         ]
     }

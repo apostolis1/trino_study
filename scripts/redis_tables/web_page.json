@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "wp_web_page_sk",
-                "mapping": "wp_web_page_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "wp_web_page_id",
                 "mapping": "wp_web_page_id",
                 "type": "VARCHAR(16)"
@@ -72,6 +67,15 @@
                 "name": "wp_max_ad_count",
                 "mapping": "wp_max_ad_count",
                 "type": "DOUBLE"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "wp_web_page_sk",
+                "type": "VARCHAR"
             }
         ]
     }

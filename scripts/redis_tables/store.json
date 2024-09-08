@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "s_store_sk",
-                "mapping": "s_store_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "s_store_id",
                 "mapping": "s_store_id",
                 "type": "VARCHAR(16)"
@@ -147,6 +142,15 @@
                 "name": "s_tax_precentage",
                 "mapping": "s_tax_precentage",
                 "type": "DOUBLE"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "s_store_sk",
+                "type": "VARCHAR"
             }
         ]
     }

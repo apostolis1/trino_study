@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "t_time_sk",
-                "mapping": "t_time_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "t_time_id",
                 "mapping": "t_time_id",
                 "type": "VARCHAR(16)"
@@ -52,6 +47,15 @@
                 "name": "t_meal_time",
                 "mapping": "t_meal_time",
                 "type": "VARCHAR(20)"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "t_time_sk",
+                "type": "VARCHAR"
             }
         ]
     }

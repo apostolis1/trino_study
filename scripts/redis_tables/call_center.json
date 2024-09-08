@@ -156,12 +156,11 @@
         ]
     },
     "key": {
-        "dataFormat" : "raw",
+        "dataFormat": "raw",
         "fields": [
             {
-                "dataFormat": "INT",
                 "name": "cc_call_center_sk",
-                "type": "INTEGER"
+                "type": "VARCHAR"
             }
         ]
     }

@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "d_date_sk",
-                "mapping": "d_date_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "d_date_id",
                 "mapping": "d_date_id",
                 "type": "VARCHAR(16)"
@@ -142,6 +137,15 @@
                 "name": "d_current_year",
                 "mapping": "d_current_year",
                 "type": "VARCHAR(1)"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "d_date_sk",
+                "type": "VARCHAR"
             }
         ]
     }

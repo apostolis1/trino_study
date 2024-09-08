@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "cp_catalog_page_sk",
-                "mapping": "cp_catalog_page_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "cp_catalog_page_id",
                 "mapping": "cp_catalog_page_id",
                 "type": "VARCHAR(16)"
@@ -47,6 +42,15 @@
                 "name": "cp_type",
                 "mapping": "cp_type",
                 "type": "VARCHAR(100)"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "cp_catalog_page_sk",
+                "type": "VARCHAR"
             }
         ]
     }

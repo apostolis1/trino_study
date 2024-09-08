@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "ca_address_sk",
-                "mapping": "ca_address_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "ca_address_id",
                 "mapping": "ca_address_id",
                 "type": "VARCHAR(16)"
@@ -67,6 +62,15 @@
                 "name": "ca_location_type",
                 "mapping": "ca_location_type",
                 "type": "VARCHAR(20)"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "ca_address_sk",
+                "type": "VARCHAR"
             }
         ]
     }

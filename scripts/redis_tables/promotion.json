@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "p_promo_sk",
-                "mapping": "p_promo_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "p_promo_id",
                 "mapping": "p_promo_id",
                 "type": "VARCHAR(16)"
@@ -97,6 +92,15 @@
                 "name": "p_discount_active",
                 "mapping": "p_discount_active",
                 "type": "VARCHAR(1)"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "p_promo_sk",
+                "type": "VARCHAR"
             }
         ]
     }

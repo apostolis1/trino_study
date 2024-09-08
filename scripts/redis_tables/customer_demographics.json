@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "cd_demo_sk",
-                "mapping": "cd_demo_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "cd_gender",
                 "mapping": "cd_gender",
                 "type": "VARCHAR(1)"
@@ -47,6 +42,15 @@
                 "name": "cd_dep_college_count",
                 "mapping": "cd_dep_college_count",
                 "type": "DOUBLE"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "cd_demo_sk",
+                "type": "VARCHAR"
             }
         ]
     }

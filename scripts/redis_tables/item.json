@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "i_item_sk",
-                "mapping": "i_item_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "i_item_id",
                 "mapping": "i_item_id",
                 "type": "VARCHAR(16)"
@@ -112,6 +107,15 @@
                 "name": "i_product_name",
                 "mapping": "i_product_name",
                 "type": "VARCHAR(50)"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "i_item_sk",
+                "type": "VARCHAR"
             }
         ]
     }

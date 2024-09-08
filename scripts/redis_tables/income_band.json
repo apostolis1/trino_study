@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "ib_income_band_sk",
-                "mapping": "ib_income_band_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "ib_lower_bound",
                 "mapping": "ib_lower_bound",
                 "type": "DOUBLE"
@@ -17,6 +12,15 @@
                 "name": "ib_upper_bound",
                 "mapping": "ib_upper_bound",
                 "type": "DOUBLE"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "ib_income_band_sk",
+                "type": "VARCHAR"
             }
         ]
     }

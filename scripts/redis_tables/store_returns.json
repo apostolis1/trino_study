@@ -14,6 +14,11 @@
                 "type": "DOUBLE"
             },
             {
+                "name": "sr_item_sk",
+                "mapping": "sr_item_sk",
+                "type": "DOUBLE"
+            },
+            {
                 "name": "sr_customer_sk",
                 "mapping": "sr_customer_sk",
                 "type": "DOUBLE"
@@ -41,6 +46,11 @@
             {
                 "name": "sr_reason_sk",
                 "mapping": "sr_reason_sk",
+                "type": "DOUBLE"
+            },
+            {
+                "name": "sr_ticket_number",
+                "mapping": "sr_ticket_number",
                 "type": "DOUBLE"
             },
             {
@@ -99,16 +109,9 @@
         "dataFormat": "raw",
         "fields": [
             {
-                "dataFormat": "INT",
-                "name": "sr_item_sk",
-                "type": "INTEGER"
-		    },
-            {
-                "dataFormat": "INT",
-                "name": "sr_ticket_number",
-                "type": "INTEGER"
-		    }
+                "name": "pkey",
+                "type": "VARCHAR"
+            }
         ]
     }
-    
 }

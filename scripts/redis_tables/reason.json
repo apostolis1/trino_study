@@ -4,11 +4,6 @@
         "dataFormat": "hash",
         "fields": [
             {
-                "name": "r_reason_sk",
-                "mapping": "r_reason_sk",
-                "type": "DOUBLE"
-            },
-            {
                 "name": "r_reason_id",
                 "mapping": "r_reason_id",
                 "type": "VARCHAR(16)"
@@ -17,6 +12,15 @@
                 "name": "r_reason_desc",
                 "mapping": "r_reason_desc",
                 "type": "VARCHAR(100)"
+            }
+        ]
+    },
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "r_reason_sk",
+                "type": "VARCHAR"
             }
         ]
     }
