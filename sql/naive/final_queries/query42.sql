@@ -18,5 +18,4 @@ select  dt.d_year
  		,item.i_category_id
  		,item.i_category
  fetch first 100 rows only ;
-
--- end query 1 in stream 0 using template query42.tpl
+--end--query42--naive

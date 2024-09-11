@@ -16,3 +16,4 @@ select  ca_zip
  group by ca_zip
  order by ca_zip
   fetch first 100 rows only;
+--end--query15--naive

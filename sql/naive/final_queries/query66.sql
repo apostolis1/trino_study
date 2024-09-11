@@ -266,5 +266,7 @@ GROUP BY
   ship_carriers, 
   year 
 ORDER BY 
-  w_warehouse_name FETCH FIRST 100 ROWS ONLY 
-  /* end query 1 in stream 0 using template query66.tpl */
+  w_warehouse_name FETCH FIRST 100 ROWS ONLY;
+
+--end--query66--naive
+

@@ -1,4 +1,4 @@
-/* start query 1 in stream 0 using template query84.tpl */
+--query84--naive
 SELECT 
   c_customer_id AS customer_id, 
   COALESCE(c_last_name, '') || ', ' || COALESCE(c_first_name, '') AS customername 
@@ -19,5 +19,6 @@ WHERE
   AND hd_demo_sk = c_current_hdemo_sk 
   AND sr_cdemo_sk = cd_demo_sk 
 ORDER BY 
-  c_customer_id FETCH FIRST 100 ROWS ONLY 
-  /* end query 1 in stream 0 using template query84.tpl */
+  c_customer_id FETCH FIRST 100 ROWS ONLY; 
+
+--end--query84--naive

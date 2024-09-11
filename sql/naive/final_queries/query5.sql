@@ -189,5 +189,6 @@ GROUP BY
   ROLLUP (channel, id) 
 ORDER BY 
   channel, 
-  id FETCH FIRST 100 ROWS ONLY 
-  /* end query 1 in stream 0 using template query5.tpl */
+  id FETCH FIRST 100 ROWS ONLY ;
+
+--end--query5--naive

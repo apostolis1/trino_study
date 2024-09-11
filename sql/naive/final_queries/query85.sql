@@ -81,4 +81,4 @@ order by substr(r_reason_desc,1,20)
         ,avg(wr_fee)
  fetch first 100 rows only;
 
--- end query 1 in stream 0 using template query85.tpl
+--end--query85--naive

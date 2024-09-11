@@ -15,4 +15,5 @@ select  ss_customer_sk
       order by sumsales, ss_customer_sk
  fetch first 100 rows only;
 
--- end query 1 in stream 0 using template query93.tpl
+--end--query93--naive
+

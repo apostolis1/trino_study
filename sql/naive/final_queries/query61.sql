@@ -61,5 +61,6 @@ FROM
   ) AS all_sales 
 ORDER BY 
   promotions, 
-  total FETCH FIRST 100 ROWS ONLY 
-  /* end query 1 in stream 0 using template query61.tpl */
+  total FETCH FIRST 100 ROWS ONLY ;
+
+--end--query61--naive

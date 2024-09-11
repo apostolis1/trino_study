@@ -14,4 +14,5 @@ select  i_item_id
  order by i_item_id
   fetch first 100 rows only;
 
--- end query 1 in stream 0 using template query37.tpl
+--end--query37--naive
+
