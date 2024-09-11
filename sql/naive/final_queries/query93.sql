@@ -13,7 +13,7 @@ select  ss_customer_sk
               and trim(r_reason_desc) = 'Did not like the warranty') t
       group by ss_customer_sk
       order by sumsales, ss_customer_sk
- fetch first 100 rows only;
-
+ fetch first 100 rows only
 --end--query93--naive
+;
 

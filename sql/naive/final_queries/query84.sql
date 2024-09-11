@@ -1,7 +1,7 @@
 --query84--naive
 SELECT 
   c_customer_id AS customer_id, 
-  COALESCE(c_last_name, '') || ', ' || COALESCE(c_first_name, '') AS customername 
+  COALESCE(trim(c_last_name), '') || ', ' || COALESCE(trim(c_first_name), '') AS customername 
 FROM 
   cassandra.trino.customer, 
   redis.default.customer_address, 
@@ -11,7 +11,7 @@ FROM
   cassandra.trino.store_returns 
 WHERE 
   ca_city = 'Hopewell' 
-  AND c_current_addr_sk = ca_address_sk 
+  AND c_current_addr_sk = cast(replace(ca_address_sk, 'customer_address:', '') as integer) 
   AND ib_lower_bound >= 32287 
   AND ib_upper_bound <= 32287 + 50000 
   AND ib_income_band_sk = hd_income_band_sk 
@@ -19,6 +19,6 @@ WHERE
   AND hd_demo_sk = c_current_hdemo_sk 
   AND sr_cdemo_sk = cd_demo_sk 
 ORDER BY 
-  c_customer_id FETCH FIRST 100 ROWS ONLY; 
-
+  c_customer_id FETCH FIRST 100 ROWS ONLY 
 --end--query84--naive
+;

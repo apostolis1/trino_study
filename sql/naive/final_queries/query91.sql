@@ -40,6 +40,6 @@ GROUP BY
   cd_marital_status, 
   cd_education_status 
 ORDER BY 
-  SUM(cr_net_loss) DESC;
-
+  SUM(cr_net_loss) DESC
 --end--query91--naive
+;

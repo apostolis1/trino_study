@@ -61,6 +61,6 @@ FROM
   ) AS all_sales 
 ORDER BY 
   promotions, 
-  total FETCH FIRST 100 ROWS ONLY ;
-
+  total FETCH FIRST 100 ROWS ONLY
 --end--query61--naive
+;

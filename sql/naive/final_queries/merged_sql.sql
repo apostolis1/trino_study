@@ -215,19 +215,20 @@ select  ca_zip
 select  i_item_id
        ,i_item_desc
        ,i_current_price
- from redis.default.item, postgres.public.inventory, redis.default.date_dim, cassandra.trino.catalog_sales
+ from redis.default.item, postgresql.public.inventory, redis.default.date_dim, cassandra.trino.catalog_sales
  where i_current_price between 22 and 22 + 30
- and concat("item:", inv_item_sk) = i_item_sk
- and d_date_sk=concat("date_dim:", inv_date_sk)
- and cast(d_date as date) between cast('2001-06-02' as date) and (cast('2001-06-02' as date) +  60 days)
+ and inv_item_sk = cast(replace(i_item_sk, 'item:', '')as integer)
+ and cast(replace(d_date_sk, 'date_dim:', '') as integer) = inv_date_sk
+ and cast(d_date as date) between cast('2001-06-02' as date) and (cast('2001-06-02' as date) + interval '60' day)
  and i_manufact_id in (678,964,918,849)
  and inv_quantity_on_hand between 100 and 500
- and concat("item:", cs_item_sk) = i_item_sk
+ and cs_item_sk = cast(replace(i_item_sk, 'item:', '')as integer)
  group by i_item_id,i_item_desc,i_current_price
  order by i_item_id
-  fetch first 100 rows only;
+  fetch first 100 rows only
+  --end--query37--naive
+;
 
---end--query37--naive
 
 --query40--naive
 select  
@@ -254,8 +255,9 @@ select
  group by
     w_state,i_item_id
  order by w_state,i_item_id
- fetch first 100 rows only;
+ fetch first 100 rows only
 --end--query40--naive
+ ;
 --query42--naive
 select  dt.d_year
  	,item.i_category_id
@@ -275,8 +277,9 @@ select  dt.d_year
  order by       sum(ss_ext_sales_price) desc,dt.d_year
  		,item.i_category_id
  		,item.i_category
- fetch first 100 rows only ;
+ fetch first 100 rows only 
 --end--query42--naive
+;
 --query61--naive
 SELECT 
   promotions, 
@@ -340,9 +343,9 @@ FROM
   ) AS all_sales 
 ORDER BY 
   promotions, 
-  total FETCH FIRST 100 ROWS ONLY ;
-
+  total FETCH FIRST 100 ROWS ONLY
 --end--query61--naive
+;
 --query66--naive
 SELECT 
   w_warehouse_name, 
@@ -611,14 +614,14 @@ GROUP BY
   ship_carriers, 
   year 
 ORDER BY 
-  w_warehouse_name FETCH FIRST 100 ROWS ONLY;
-
+  w_warehouse_name FETCH FIRST 100 ROWS ONLY
 --end--query66--naive
+;
 
 --query84--naive
 SELECT 
   c_customer_id AS customer_id, 
-  COALESCE(c_last_name, '') || ', ' || COALESCE(c_first_name, '') AS customername 
+  COALESCE(trim(c_last_name), '') || ', ' || COALESCE(trim(c_first_name), '') AS customername 
 FROM 
   cassandra.trino.customer, 
   redis.default.customer_address, 
@@ -628,7 +631,7 @@ FROM
   cassandra.trino.store_returns 
 WHERE 
   ca_city = 'Hopewell' 
-  AND c_current_addr_sk = ca_address_sk 
+  AND c_current_addr_sk = cast(replace(ca_address_sk, 'customer_address:', '') as integer) 
   AND ib_lower_bound >= 32287 
   AND ib_upper_bound <= 32287 + 50000 
   AND ib_income_band_sk = hd_income_band_sk 
@@ -636,9 +639,9 @@ WHERE
   AND hd_demo_sk = c_current_hdemo_sk 
   AND sr_cdemo_sk = cd_demo_sk 
 ORDER BY 
-  c_customer_id FETCH FIRST 100 ROWS ONLY; 
-
+  c_customer_id FETCH FIRST 100 ROWS ONLY 
 --end--query84--naive
+;
 --query85--naive
 select  substr(r_reason_desc,1,20)
        ,avg(ws_quantity)
@@ -720,9 +723,10 @@ order by substr(r_reason_desc,1,20)
         ,avg(ws_quantity)
         ,avg(wr_refunded_cash)
         ,avg(wr_fee)
- fetch first 100 rows only;
-
---end--query85--naive--query91--naive
+ fetch first 100 rows only
+--end--query85--naive
+;
+--query91--naive
 SELECT 
   cc_call_center_id AS Call_Center, 
   cc_name AS Call_Center_Name, 
@@ -764,9 +768,9 @@ GROUP BY
   cd_marital_status, 
   cd_education_status 
 ORDER BY 
-  SUM(cr_net_loss) DESC;
-
+  SUM(cr_net_loss) DESC
 --end--query91--naive
+;
 --query93--naive
 select  ss_customer_sk
             ,sum(act_sales) sumsales
@@ -782,7 +786,7 @@ select  ss_customer_sk
               and trim(r_reason_desc) = 'Did not like the warranty') t
       group by ss_customer_sk
       order by sumsales, ss_customer_sk
- fetch first 100 rows only;
-
+ fetch first 100 rows only
 --end--query93--naive
+;
 

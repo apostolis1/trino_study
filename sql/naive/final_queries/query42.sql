@@ -17,5 +17,6 @@ select  dt.d_year
  order by       sum(ss_ext_sales_price) desc,dt.d_year
  		,item.i_category_id
  		,item.i_category
- fetch first 100 rows only ;
+ fetch first 100 rows only 
 --end--query42--naive
+;

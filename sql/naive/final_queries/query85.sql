@@ -79,6 +79,6 @@ order by substr(r_reason_desc,1,20)
         ,avg(ws_quantity)
         ,avg(wr_refunded_cash)
         ,avg(wr_fee)
- fetch first 100 rows only;
-
+ fetch first 100 rows only
 --end--query85--naive
+;
