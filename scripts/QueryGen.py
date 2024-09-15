@@ -199,7 +199,7 @@ class QueryGen:
         """
         create_statements = []
         for table in self.sql_tables:
-            if table.name not in self.TABLES_TO_EXCLUDE:
+            if table.name not in self.TABLES_TO_EXCLUDE and self.mapping[table.name] != "redis":
                 create_statements.append(self.create_from_table(table, True))
         return create_statements
 
@@ -280,14 +280,33 @@ class QueryGen:
         return stmts
 
     def generate_count_stmts(self) -> list:
+        COUNT_ROWS_FILE = "/home/apostolis/Projects/bigdata/local/row_count.json"
+        with open(COUNT_ROWS_FILE, "r+") as f:
+            count_rows = json.load(f)
         compares = []
         for table_name, db in self.mapping.items():
             full_table_name = self.get_full_name(table_name)
-            cmp = f"(SELECT count(*) from tpcds.{self.config.get_benchmark()}.{table_name})=(SELECT count(*) from {full_table_name}) AS {table_name}"
+            if table_name not in count_rows.keys():
+                print(f"Can't find {table_name} in count_rows, skipping")
+                continue
+            # (SELECT _catalog_returns, (_catalog_returns = 1439749) from (SELECT count(*) AS _catalog_returns from redis.default.catalog_returns ))
+            # cmp = f"SELECT _{table_name}, _{table_name} = {count_rows[table_name]} from (SELECT count(*) from {full_table_name}) AS {table_name}"
+            cmp = f"(SELECT _{table_name}, (_{table_name} = {count_rows[table_name]}) from (SELECT count(*) AS _{table_name} from {full_table_name} ))"
             compares.append(cmp)
-        comp_str = ",".join(compares)
-        count_stmt = f"SELECT {comp_str};"
+        comp_str = ",\n".join(compares)
+        count_stmt = f"SELECT {comp_str}"
         return [count_stmt]
+
+    def generate_count_rows_stmts(self) -> list:
+
+        compares = []
+        for table_name, db in self.mapping.items():
+            # cmp = f"SELECT _{table_name}, _{table_name} = {count_rows[table_name]} from (SELECT count(*) from {full_table_name}) AS {table_name}"
+            cmp = f"(SELECT count(*) as _{table_name} from tpcds.{self.config.get_benchmark()}.{table_name})"
+            compares.append(cmp)
+        comp_str = ",\n".join(compares)
+        count_stmt = f"SELECT {comp_str}"
+        return count_stmt
 
     def generate_create_and_dump(self):
         st = self.generate_create()

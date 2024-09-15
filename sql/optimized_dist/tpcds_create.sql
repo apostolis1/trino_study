@@ -109,13 +109,6 @@ r_reason_id CHAR(16),
 r_reason_desc CHAR(100),
 PRIMARY KEY(r_reason_sk)
 );
-CREATE TABLE IF NOT EXISTS postgresql.public.income_band 
-(
-ib_income_band_sk INTEGER,
-ib_lower_bound INTEGER,
-ib_upper_bound INTEGER,
-PRIMARY KEY(ib_income_band_sk)
-);
 CREATE TABLE IF NOT EXISTS postgresql.public.item 
 (
 i_item_sk INTEGER,
@@ -262,30 +255,6 @@ web_gmt_offset DECIMAL(5,2),
 web_tax_percentage DECIMAL(5,2),
 PRIMARY KEY(web_site_sk)
 );
-CREATE TABLE IF NOT EXISTS postgresql.public.store_returns 
-(
-sr_returned_date_sk INTEGER,
-sr_return_time_sk INTEGER,
-sr_item_sk INTEGER,
-sr_customer_sk INTEGER,
-sr_cdemo_sk INTEGER,
-sr_hdemo_sk INTEGER,
-sr_addr_sk INTEGER,
-sr_store_sk INTEGER,
-sr_reason_sk INTEGER,
-sr_ticket_number INTEGER,
-sr_return_quantity INTEGER,
-sr_return_amt DECIMAL(7,2),
-sr_return_tax DECIMAL(7,2),
-sr_return_amt_inc_tax DECIMAL(7,2),
-sr_fee DECIMAL(7,2),
-sr_return_ship_cost DECIMAL(7,2),
-sr_refunded_cash DECIMAL(7,2),
-sr_reversed_charge DECIMAL(7,2),
-sr_store_credit DECIMAL(7,2),
-sr_net_loss DECIMAL(7,2),
-PRIMARY KEY(sr_item_sk,sr_ticket_number)
-);
 CREATE TABLE IF NOT EXISTS postgresql.public.household_demographics 
 (
 hd_demo_sk INTEGER,
@@ -294,24 +263,6 @@ hd_buy_potential CHAR(15),
 hd_dep_count INTEGER,
 hd_vehicle_count INTEGER,
 PRIMARY KEY(hd_demo_sk)
-);
-CREATE TABLE IF NOT EXISTS postgresql.public.web_page 
-(
-wp_web_page_sk INTEGER,
-wp_web_page_id CHAR(16),
-wp_rec_start_date DATE,
-wp_rec_end_date DATE,
-wp_creation_date_sk INTEGER,
-wp_access_date_sk INTEGER,
-wp_autogen_flag CHAR(1),
-wp_customer_sk INTEGER,
-wp_url VARCHAR(100),
-wp_type CHAR(50),
-wp_char_count INTEGER,
-wp_link_count INTEGER,
-wp_image_count INTEGER,
-wp_max_ad_count INTEGER,
-PRIMARY KEY(wp_web_page_sk)
 );
 CREATE TABLE IF NOT EXISTS postgresql.public.promotion 
 (
@@ -349,13 +300,13 @@ cp_description VARCHAR(100),
 cp_type VARCHAR(100),
 PRIMARY KEY(cp_catalog_page_sk)
 );
-CREATE TABLE IF NOT EXISTS postgresql.public.inventory 
+CREATE TABLE IF NOT EXISTS cassandra.trino.inventory 
 (
-inv_date_sk INTEGER,
-inv_item_sk INTEGER,
-inv_warehouse_sk INTEGER,
-inv_quantity_on_hand INTEGER,
-PRIMARY KEY(inv_date_sk,inv_item_sk,inv_warehouse_sk)
+inv_date_sk INT,
+inv_item_sk INT,
+inv_warehouse_sk INT,
+inv_quantity_on_hand INT,
+PRIMARY KEY((inv_date_sk,inv_item_sk,inv_warehouse_sk))
 );
 CREATE TABLE IF NOT EXISTS postgresql.public.catalog_returns 
 (
@@ -387,34 +338,6 @@ cr_reversed_charge DECIMAL(7,2),
 cr_store_credit DECIMAL(7,2),
 cr_net_loss DECIMAL(7,2),
 PRIMARY KEY(cr_item_sk,cr_order_number)
-);
-CREATE TABLE IF NOT EXISTS postgresql.public.web_returns 
-(
-wr_returned_date_sk INTEGER,
-wr_returned_time_sk INTEGER,
-wr_item_sk INTEGER,
-wr_refunded_customer_sk INTEGER,
-wr_refunded_cdemo_sk INTEGER,
-wr_refunded_hdemo_sk INTEGER,
-wr_refunded_addr_sk INTEGER,
-wr_returning_customer_sk INTEGER,
-wr_returning_cdemo_sk INTEGER,
-wr_returning_hdemo_sk INTEGER,
-wr_returning_addr_sk INTEGER,
-wr_web_page_sk INTEGER,
-wr_reason_sk INTEGER,
-wr_order_number INTEGER,
-wr_return_quantity INTEGER,
-wr_return_amt DECIMAL(7,2),
-wr_return_tax DECIMAL(7,2),
-wr_return_amt_inc_tax DECIMAL(7,2),
-wr_fee DECIMAL(7,2),
-wr_return_ship_cost DECIMAL(7,2),
-wr_refunded_cash DECIMAL(7,2),
-wr_reversed_charge DECIMAL(7,2),
-wr_account_credit DECIMAL(7,2),
-wr_net_loss DECIMAL(7,2),
-PRIMARY KEY(wr_item_sk,wr_order_number)
 );
 CREATE TABLE IF NOT EXISTS postgresql.public.web_sales 
 (
@@ -492,30 +415,30 @@ cs_net_paid_inc_ship_tax DECIMAL(7,2),
 cs_net_profit DECIMAL(7,2),
 PRIMARY KEY(cs_item_sk,cs_order_number)
 );
-CREATE TABLE IF NOT EXISTS postgresql.public.store_sales 
+CREATE TABLE IF NOT EXISTS cassandra.trino.store_sales 
 (
-ss_sold_date_sk INTEGER,
-ss_sold_time_sk INTEGER,
-ss_item_sk INTEGER,
-ss_customer_sk INTEGER,
-ss_cdemo_sk INTEGER,
-ss_hdemo_sk INTEGER,
-ss_addr_sk INTEGER,
-ss_store_sk INTEGER,
-ss_promo_sk INTEGER,
-ss_ticket_number INTEGER,
-ss_quantity INTEGER,
-ss_wholesale_cost DECIMAL(7,2),
-ss_list_price DECIMAL(7,2),
-ss_sales_price DECIMAL(7,2),
-ss_ext_discount_amt DECIMAL(7,2),
-ss_ext_sales_price DECIMAL(7,2),
-ss_ext_wholesale_cost DECIMAL(7,2),
-ss_ext_list_price DECIMAL(7,2),
-ss_ext_tax DECIMAL(7,2),
-ss_coupon_amt DECIMAL(7,2),
-ss_net_paid DECIMAL(7,2),
-ss_net_paid_inc_tax DECIMAL(7,2),
-ss_net_profit DECIMAL(7,2),
-PRIMARY KEY(ss_item_sk,ss_ticket_number)
+ss_sold_date_sk INT,
+ss_sold_time_sk INT,
+ss_item_sk INT,
+ss_customer_sk INT,
+ss_cdemo_sk INT,
+ss_hdemo_sk INT,
+ss_addr_sk INT,
+ss_store_sk INT,
+ss_promo_sk INT,
+ss_ticket_number INT,
+ss_quantity INT,
+ss_wholesale_cost DOUBLE,
+ss_list_price DOUBLE,
+ss_sales_price DOUBLE,
+ss_ext_discount_amt DOUBLE,
+ss_ext_sales_price DOUBLE,
+ss_ext_wholesale_cost DOUBLE,
+ss_ext_list_price DOUBLE,
+ss_ext_tax DOUBLE,
+ss_coupon_amt DOUBLE,
+ss_net_paid DOUBLE,
+ss_net_paid_inc_tax DOUBLE,
+ss_net_profit DOUBLE,
+PRIMARY KEY((ss_item_sk,ss_ticket_number))
 );

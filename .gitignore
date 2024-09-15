@@ -3,6 +3,11 @@ __pycache__/
 *.pyc
 *$py.class
 
+*.zip
+*.ods
+figs/
+query_logs/
+
 # Local and backup files
 local/
 bck/

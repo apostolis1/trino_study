@@ -1,0 +1,26 @@
+,,,,,,,,,,,,
+,Query,query93.sql,query37.sql,query57.sql,query40.sql,query85.sql,query64.sql,query5.sql,query66.sql,query15.sql,query42.sql,query91.sql
+,customer, , , , , ,X, , ,X, ,X
+,store_sales,X, , , , ,X,X, , ,X, 
+,web_site, , , , , , ,X, , , , 
+,web_page, , , , ,X, , , , , , 
+,household_demographics, , , , , ,X, , , , ,X
+,promotion, , , , , ,X, , , , , 
+,date_dim, ,X,X,X,X,X,X,X,X,X,X
+,store_returns,X, , , , ,X,X, , , , 
+,customer_address, , , , ,X,X, , ,X, ,X
+,ship_mode, , , , , , , ,X, , , 
+,customer_demographics, , , , ,X,X, , , , ,X
+,item, ,X,X,X, ,X, , , ,X, 
+,warehouse, , , ,X, , , ,X, , , 
+,catalog_sales, ,X,X,X, ,X,X,X,X, , 
+,income_band, , , , , ,X, , , , , 
+,web_sales, , , , ,X, ,X,X, , , 
+,call_center, , ,X, , , , , , , ,X
+,time_dim, , , , , , , ,X, , , 
+,inventory, ,X, , , , , , , , , 
+,catalog_returns, , , ,X, ,X,X, , , ,X
+,reason,X, , , ,X, , , , , , 
+,store, , , , , ,X,X, , , , 
+,catalog_page, , , , , , ,X, , , , 
+,web_returns, , , , ,X, ,X, , , , 

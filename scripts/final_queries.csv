@@ -1,0 +1,13 @@
+,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24
+0,Query,customer,store_sales,web_site,web_page,household_demographics,promotion,date_dim,store_returns,customer_address,ship_mode,customer_demographics,item,warehouse,catalog_sales,income_band,web_sales,call_center,time_dim,inventory,catalog_returns,reason,store,catalog_page,web_returns
+1,query93.sql, ,X, , , , , ,X, , , , , , , , , , , , ,X, , , 
+2,query37.sql, , , , , , ,X, , , , ,X, ,X, , , , ,X, , , , , 
+3,query40.sql, , , , , , ,X, , , , ,X,X,X, , , , , ,X, , , , 
+4,query85.sql, , , ,X, , ,X, ,X, ,X, , , , ,X, , , , ,X, , ,X
+5,query5.sql, ,X,X, , , ,X,X, , , , , ,X, ,X, , , ,X, ,X,X,X
+6,query66.sql, , , , , , ,X, , ,X, , ,X,X, ,X, ,X, , , , , , 
+7,query84.sql,X, , , ,X, , ,X,X, ,X, , , ,X, , , , , , , , , 
+8,query61.sql,X,X, , , ,X,X, ,X, , ,X, , , , , , , , , ,X, , 
+9,query15.sql,X, , , , , ,X, ,X, , , , ,X, , , , , , , , , , 
+10,query42.sql, ,X, , , , ,X, , , , ,X, , , , , , , , , , , , 
+11,query91.sql,X, , , ,X, ,X, ,X, ,X, , , , , ,X, , ,X, , , , 
